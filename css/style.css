@@ -5,7 +5,12 @@
   justify-content: center;
   align-items: center; }
   .header_price_tab {
-    display: flex; }
+    display: flex;
+    justify-content: space-around;
+    width: 75%; }
+    @media only screen and (min-width: 1800px) {
+      .header_price_tab {
+        width: 19%; } }
   .header_text {
     margin-bottom: 1em; }
 
@@ -184,11 +189,11 @@ input:checked + .slider:before {
 
 .toggle {
   position: relative;
-  width: 4em;
-  height: 2em;
+  width: 4.3em;
+  height: 2.3em;
   border: 1px solid black;
-  border-radius: 50%;
-  background-image: linear-gradient(#a3a8f0, #696fdd); }
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  border-radius: 28.5%; }
 
 .circle {
   width: 1.7em;
