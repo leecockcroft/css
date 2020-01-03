@@ -1,0 +1,89 @@
+.card{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  @include respond(big-desktop){
+flex-direction: row;
+
+
+    align-items:center;
+  }
+
+  &_box{
+    border:1px solid black;
+    border-radius:5%;
+    text-align: center;
+    margin-bottom:2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(big-desktop){
+        width:45%;
+
+    }
+    @include respond(big-desktop){
+          width:33%;
+
+      }
+
+
+    &_header{
+      padding: 0.9em;
+    }
+
+    &_p{
+      border-top:1px solid black;
+      padding:1.3em;
+      width: 70%;
+margin: auto;
+    }
+  }
+  &_cta{
+  background-image:linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+font-size: 1em;
+width: 15em;
+padding: 0.5em;
+color: #fff;
+border-radius: 0.7em;
+    margin-bottom: 2em;
+        margin-top: 2em;
+
+
+        &:hover{
+          background:#fff;
+          color:black;
+
+        }
+
+        @include respond(big-desktop){
+          font-size: 1.1em;
+    width: 20em;
+        }
+  }
+}
+
+.pro{
+  background-image:linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+  color:#fff;
+padding: 4em 0;
+
+
+}
+
+.pro > button{
+  background:#fff;
+  color:#696fdd;
+  &:hover{
+    background-image:linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color:#fff;
+  }
+}
+.monthly{
+  display:block;
+}

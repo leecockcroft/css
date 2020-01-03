@@ -1,0 +1,14 @@
+.header{
+
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_price_tab{
+      display:flex;
+  }
+  &_text{
+    margin-bottom:1em;
+  }
+}

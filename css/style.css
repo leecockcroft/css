@@ -1,0 +1,204 @@
+.header {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header_price_tab {
+    display: flex; }
+  .header_text {
+    margin-bottom: 1em; }
+
+.card {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  background-color: #fff; }
+  @media only screen and (min-width: 1800px) {
+    .card {
+      flex-direction: row;
+      align-items: center; } }
+  .card_box {
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 1800px) {
+      .card_box {
+        width: 45%; } }
+    @media only screen and (min-width: 1800px) {
+      .card_box {
+        width: 33%; } }
+    .card_box_header {
+      padding: 0.9em; }
+    .card_box_p {
+      border-top: 1px solid black;
+      padding: 1.3em;
+      width: 70%;
+      margin: auto; }
+  .card_cta {
+    background-image: linear-gradient(#a3a8f0, #696fdd);
+    font-size: 1em;
+    width: 15em;
+    padding: 0.5em;
+    color: #fff;
+    border-radius: 0.7em;
+    margin-bottom: 2em;
+    margin-top: 2em; }
+    .card_cta:hover {
+      background: #fff;
+      color: black; }
+    @media only screen and (min-width: 1800px) {
+      .card_cta {
+        font-size: 1.1em;
+        width: 20em; } }
+
+.pro {
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  color: #fff;
+  padding: 4em 0; }
+
+.pro > button {
+  background: #fff;
+  color: #696fdd; }
+  .pro > button:hover {
+    background-image: linear-gradient(#a3a8f0, #696fdd);
+    color: #fff; }
+
+.monthly {
+  display: block; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-weight: 700;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  font-size: 1.5em;
+  margin: auto; }
+
+#wrapper {
+  position: relative;
+  background-color: #f6f6fe; }
+  @media only screen and (min-width: 1800px) {
+    #wrapper {
+      max-width: 1440px;
+      margin: auto;
+      height: 100vh;
+      margin-top: 5em; } }
+
+.top {
+  position: absolute;
+  right: -204px;
+  top: -3em; }
+  @media only screen and (min-width: 1800px) {
+    .top {
+      right: -6px;
+      top: 0em; } }
+
+.bottom {
+  display: none; }
+  @media only screen and (min-width: 1800px) {
+    .bottom {
+      display: block;
+      position: absolute;
+      bottom: -1em; } }
+
+.monthly {
+  display: none; }
+
+/* The switch - the box around the slider */
+.header_switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  margin: 0 0.5em; }
+
+/* Hide default HTML checkbox */
+.header_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.dollar {
+  font-size: 4em;
+  padding-bottom: 0.4em; }
+
+.last {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em; }
+
+.toggle {
+  position: relative;
+  width: 4em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: linear-gradient(#a3a8f0, #696fdd); }
+
+.circle {
+  width: 1.7em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 1s; }
+
+.right {
+  left: 31px; }

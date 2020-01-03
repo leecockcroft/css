@@ -1,0 +1,16 @@
+{
+  "name": "toggle-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.0"
+  }
+}
